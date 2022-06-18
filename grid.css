@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: darkslategrey;
+}
+
+
+/* styling the header */
+header{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* styling the container and the items */
+.container{
+    margin: 4rem auto;
+    width: 60%;
+    height: 75vh;
+    display: grid;
+    place-content: center;
+    grid-template-rows: 2fr 2fr 2.5fr 2.5fr 0.5fr;
+    grid-template-columns: 16rem 6rem 12rem;
+    grid-gap: 1rem;
+    grid-template-areas:   
+    "header header sidebar"
+    "header header sidebar"
+    "main main-sidebar main-sidebar"
+    "main footer footer"
+    "main footer footer";
+}
+
+.header{
+    background-color: orangered;
+    grid-area: header;
+}
+
+.sidebar{
+    background-color: orange;
+    grid-area: sidebar;
+}
+
+.main{
+    background-color: green;
+    grid-area: main;
+}
+
+.main-sidebar{
+    background-color: lightseagreen;
+    grid-area: main-sidebar;
+}
+
+.footer{
+    background-color: lightseagreen;
+    grid-area: footer;
+}
+
+
+/*                        MEDIA QUERIES             */
+@media (max-width: 600px){
+
+    .container{
+        margin: 6rem auto;
+        width: 70%;
+        grid-template-columns: 37rem 7rem 15rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+    /* styling the container and the items */
+    .container{
+        grid-template-columns: 17rem 7rem 13rem;
+    }
+
+} 
+
+
+@media (min-width: 1000px) and (max-width: 1200px){
+    /* styling the container and the items */
+    .container{
+        grid-template-columns: 19rem 6rem 17rem;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+
+    /* styling the container and the items */
+    .container{
+        grid-template-columns: 25rem 8rem 19rem;
+    }
+}
+
+
+
+
+@media (min-width: 1400px) and (max-width: 2000px){
+    /* styling the container and the items */
+    .container{
+        grid-gap: 1.5rem;
+        grid-template-columns: 30rem 6rem 25rem;
+    }
+
+} 
+
+
+@media (min-width: 2000px){
+    /* stlying the header */
+    a{
+        font-size: 4rem;
+    }
+
+    /* styling the container and the items */
+    .container{
+        grid-gap: 2rem;
+        grid-template-columns: 50rem 10rem 40rem;
+    }
+
+}

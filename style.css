@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulder+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* styling overall */
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1.5rem;
+}
+
+img{
+    width: 30%;
+}
+
+h1{
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button{
+    margin-top: 5rem;
+    background-color:hsl(0, 0%, 95%);
+    border: 0rem solid;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#child1:hover, #child2:hover, #child3:hover{
+    background: none;
+    color: hsl(0, 0%, 95%);
+    border: 0.15rem solid hsl(0, 0%, 95%);
+    font-size: 13px;
+}
+
+/* styling the header */
+header{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: orange;
+    text-align: center;
+}
+
+
+/* styling the parent container */
+.container{
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+
+/* styling the children containers */
+.child-1, .child-2, .child-3{
+    padding: 2rem;
+    height: 79vh;
+    flex-basis: 60%;
+}
+
+
+/* stlying the child-1 container */
+.child-1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+#child1{
+    color:hsl(31, 77%, 52%);
+}
+
+
+/* stlying the child-2 container */
+.child-2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#child2{
+    color: hsl(184, 100%, 22%);
+}
+
+
+/* stlying the child-2 container */
+.child-3{
+    background-color:  hsl(179, 100%, 13%);
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+#child3{
+    color: hsl(179, 100%, 13%);
+}
+
+
+/*                        MEDIA QUERIES                            */
+
+@media (max-width: 600px){
+
+    /* stlying overall */
+    button{
+        margin-top: 4rem;
+    }
+
+    a{
+        margin-left: 10%;
+    }
+
+    /* styling the parent container */
+    .container{
+        width: 200%;
+        
+    }
+
+    /* styling the children containers */
+    .child-1, .child-2, .child-3{
+        height: 90vh;
+    } 
+
+
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+
+
+    /* stlying overall */
+    button{
+        margin-top: 4rem;
+    }
+
+    /* styling the container and the items */
+    .container{
+        width: 90%;
+    }
+
+    /* styling the children containers */
+    .child-1, .child-2, .child-3{
+        height: 90vh;
+    } 
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    /* styling the parent container */
+    .container{
+        width: 70%;
+    }
+
+    /* styling the children containers */
+    .child-1, .child-2, .child-3{
+        height: 55vh;
+    }
+} 
+
+
+
+
+@media (min-width: 1400px) and (max-width: 2000px){
+
+    /* styling overall */
+    button{
+        margin-top: 6rem;
+    }
+
+    /* styling the container and the items */
+    .container{
+        padding: 4rem;
+    }
+
+    /* styling the children containers */
+    .child-1, .child-2, .child-3{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 2000px){
+
+    /* styling overall */
+    p{
+        font-size: 40px;
+    }
+
+    button{
+        margin-top: 6rem;
+    }
+
+    a{
+        font-size: 4rem;
+    }
+
+    /* styling the container and the items */
+    .container{
+        width: 70%;
+    }
+
+
+    /* styling the children containers */
+    .child-1, .child-2, .child-3{
+        padding: 5rem;
+        height: 50vh;
+
+    }
+}
+
+
+
