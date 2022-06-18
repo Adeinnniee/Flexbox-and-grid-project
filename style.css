@@ -144,7 +144,26 @@ a{
 
 }
 
-@media (min-width: 700px) and (max-width: 1000px){
+@media (min-width: 700px) and (max-width: 760px){
+    
+    /* stlying overall */
+    button{
+        margin-top: 4rem;
+    }
+
+    /* styling the container and the items */
+    .container{
+        width: 90%;
+    }
+
+    /* styling the children containers */
+    .child-1, .child-2, .child-3{
+        height: 70vh;
+    } 
+}
+
+
+@media (min-width: 760px) and (max-width: 1000px){
 
 
     /* stlying overall */
