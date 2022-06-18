@@ -144,7 +144,7 @@ a{
 
 }
 
-@media (min-width: 700px) and (max-width: 760px){
+@media (min-width: 700px) and (max-width: 750px){
     
     /* stlying overall */
     button{
@@ -158,12 +158,12 @@ a{
 
     /* styling the children containers */
     .child-1, .child-2, .child-3{
-        height: 70vh;
+        height: 69vh;
     } 
 }
 
 
-@media (min-width: 760px) and (max-width: 1000px){
+@media (min-width: 750px) and (max-width: 1000px){
 
 
     /* stlying overall */
